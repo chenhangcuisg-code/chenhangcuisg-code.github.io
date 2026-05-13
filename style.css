@@ -196,6 +196,8 @@ h1 {
 
 /* CARDS */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.cards.cards-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1100px) { .cards.cards-4 { grid-template-columns: repeat(2, 1fr); } }
 .card {
   background: var(--surface);
   border: 1px solid var(--border);

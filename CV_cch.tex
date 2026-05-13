@@ -1,0 +1,301 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{color}
+\usepackage{hyperref}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear alLifang Header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Chenhang Cui} \\ \vspace{1pt}
+    \small (+86)15209187803 $|$ \href{mailto:chenhangcui@gmail.com}{\underline{chenhangcui@gmail.com}} $|$
+    \href{https://scholar.google.com/citations?user=V5X1gdAAAAAJ}{\underline{Google scholar}} $|$
+    \href{https://github.com/chenhangcuisg-code}{\underline{GitHub page}}
+    $|$
+    \href{https://chenhangcuisg-code.github.io/}{\underline{Chenhang's homepage}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {National University of Singapore, School of Computing (NExT++ Lab)} {Singapore}
+      {Ph.D. in Computer Science, Advisor: Prof. Chua Tat-Seng; with Dr. Fei Shen}{Jan. 2026 - Present}
+    \resumeSubheading
+      {University of Electronic Science and Technology of China} {Chengdu, China}
+      {Bachelor of Yingcai Honors College}{Sept. 2021 - Jun. 2025}
+   \resumeSubheading
+      {The Middle School Attached To Northwestern Polytechnical University} {Xi'an, China}
+      {High School Diploma}{Sept. 2018 - Jun. 2021}
+          \resumeItemListStart
+            \resumeItem{GPA: 3.98/4.00\quad Average Score: 90.51  \quad Rank: 2/70 \quad TOEFL: 97}
+        \resumeItem{About me: I am very interested in large models and aspire to become an artificial intelligence scientist in the future. I enjoy making friends and in my daily life, I love running and traveling.}
+         \resumeItem{Research interests: Large Vision-language Models (LVLMs): Trustworthiness in large vision-language models, (hallucination, attack, etc.), Alignment of LVLMs, RL in LVLMs;
+            Multi-view Representation Learning: Exploring better representations for multimodal data in the real world}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Conference paper (*Equal contribution)}}{}
+      \resumeItemListStart
+
+        \resumeItem{1. \textbf{Chenhang Cui}, Gelei Deng, An Zhang, Jingnan Zheng, Yicong Li,
+        Lianli Gao, Tianwei Zhang, Tat-Seng Chua.
+        \textit{Safe + Safe = Unsafe? Exploring How Safe Images Can Be Exploited to Jailbreak
+        Large Vision-Language Models.}
+        NeurIPS, 2025.
+        \href{https://arxiv.org/pdf/2411.11496}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{2. \textbf{Chenhang Cui}, An Zhang, Yiyang Zhou, Zhaorun Chen, Gelei Deng, Huaxiu Yao, Tat-Seng Chua.
+        \textit{Fine-Grained Verifiers: Preference Modeling as Next-Token Prediction in Vision-Language Alignment.}
+        ICLR, 2025.
+        \href{https://arxiv.org/pdf/2410.14148.pdf}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{3. Peng Xia, Siwei Han, Shi Qiu, Yiyang Zhou, Zhaoyang Wang, Wenhao Zheng, Zhaorun Chen, \textbf{Chenhang Cui}, Mingyu Ding, Linjie Li, Lijuan Wang, Huaxiu Yao.
+        \textit{Mmie: Massive multimodal interleaved comprehension benchmark for large vision-language models.}
+        ICLR, 2025.
+        \href{https://arxiv.org/pdf/2410.10139}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{4. Haoqin Tu*, \textbf{Chenhang Cui}*, Zijun Wang, Yiyang Zhou, Bingchen Zhao, Junlin Han, Wangchunshu Zhou, Huaxiu Yao, Cihang Xie.
+        \textit{How Many Unicorns Are in This Image? A Safety Evaluation Benchmark for Vision LLMs.}
+        ECCV, 2024.
+        \href{https://arxiv.org/pdf/2311.16101.pdf}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{5. Yiyang Zhou*, \textbf{Chenhang Cui}*, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, Huaxiu Yao.
+        \textit{Analyzing and Mitigating Object Hallucination in Large Vision-Language Models.}
+        ICLR, 2024.
+        \href{https://arxiv.org/pdf/2310.00754.pdf}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{6. Yiyang Zhou*, \textbf{Chenhang Cui}*, Rafael Rafailov, Chelsea Finn, Huaxiu Yao.
+        \textit{Aligning Modalities in Vision Large Language Models via Preference Fine-tuning.}
+        ICLR Workshop, 2024.
+        \href{https://arxiv.org/pdf/2402.11411}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{7. Zhaorun Chen, Yichao Du, Zichen Wen, Yiyang Zhou, \textbf{Chenhang Cui}, Zhenzhen Weng, Haoqin Tu, Chaoqi Wang, Zhengwei Tong, Qinglan Huang, Canyu Chen, Qinghao Ye, Zhihong Zhu, Yuqing Zhang, Jiawei Zhou, Zhuokai Zhao, Rafael Rafailov, Chelsea Finn, Huaxiu Yao.
+        \textit{MJ-Bench: Is Your Multimodal Reward Model Really a Good Judge?}
+        ICML Workshop, 2024.
+        \href{https://openreview.net/pdf?id=H6eELDnYvd}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{8. \textbf{Chenhang Cui}, Yazhou Ren, Jingyu Pu, Jiawei Li, Xiaorong Pu, Tianyi Wu, Yutao Shi, Lifang He.
+        \textit{A Novel Approach for Effective Multi-View Clustering with Information-Theoretic Perspective.}
+        NeurIPS, 2023.
+        \href{https://arxiv.org/pdf/2309.13989.pdf}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{9. \textbf{Chenhang Cui}, Yazhou Ren, Jingyu Pu, Xiaorong Pu, Lifang He.
+        \textit{Deep Multi-view Subspace Clustering with Anchor Graph.}
+        IJCAI, 2023.
+        \href{https://www.ijcai.org/proceedings/2023/0398.pdf}{\textcolor{cyan}{[pdf]}}}
+
+        \resumeItem{10. Jingyu Pu, \textbf{Chenhang Cui}, Xinyue Chen, Yazhou Ren, Xiaorong Pu, Zhifeng Hao, S Yu Philip, Lifang He.
+        \textit{Adaptive Feature Imputation with Latent Graph for Deep Incomplete Multi-View Clustering.}
+        AAAI, 2023.
+        \href{https://ojs.aaai.org/index.php/AAAI/article/download/29380/30606}{\textcolor{cyan}{[pdf]}}}
+
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Arxiv}}{}
+      \resumeItemListStart
+        \resumeItem{1. \textbf{Chenhang Cui}*, Yiyang Zhou*, Xiangyu Yang, Shirley Wu, Linjun Zhang, James Zou, Huaxiu Yao. Holistic Analysis of Hallucination in Large Vision-Language Models: Bias and Interference Challenges
+        \href{https://arxiv.org/pdf/2311.03287.pdf}{\textcolor{cyan}{[pdf]}}}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {PhD: Trustworthy and Aligned Vision-Language Models}{Jan. 2026 -- Present}
+  {Advisor: Prof. Chua Tat-Seng; working with Dr. Fei Shen (NUS, NExT++ Lab)}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Topic}: Hallucination, safety, and RL-based alignment for large vision-language models.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Research Intern: Safety and Multimodal RL Alignment for VLLMs}{Aug. 2024 -- Aug. 2025}
+  {Host: Dr. An Zhang (NUS, NExT++ Lab)}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Topic}: Safety and Multimodal RL Alignment for VLLMs}
+    \resumeItem{\textbf{Description}: Focused on enhancing the safety and alignment of Vision-Language Large Models (VLLMs) by addressing issues of unsafe and misaligned multimodal content generation. The project involves evaluating existing VLLMs, developing new alignment techniques, and assessing their safety.}
+    \resumeItem{\textbf{Achievements}: One paper has been accepted by ICLR, 2025. One paper has been accepted by NeurIPS, 2025.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern: Reducing Hallucination in Large Vision-Language Models}{May 2023 -- Jan. 2024}
+      {Host: Prof. Huaxiu Yao (UNC MURGe-Lab)}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Topic}: Reducing object hallucination problems in Large Vision-Language models}
+        \resumeItem{\textbf{Description}: Aiming to reduce hallucination in existing Large Vision-Language models (e.g., LLaVa, MiniGPT-4, mPlug-owl).}
+        \resumeItem{\textbf{Achievements}: Reduced hallucination by 23\% without compromising text diversity in MiniGPT-4. Human and GPT assessments rank our methods as number one. Short version accepted by NeurIPS Workshop, 2023; long version accepted by ICLR. (Conference - 1)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research: Representation Learning from Multi-view Perspective}{May 2022 -- Sep. 2023}
+      {Advisor: Prof. Yazhou Ren (UESTC)}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Topic}: Consistency and Complementary of Multimodal Representations}
+        \resumeItem{\textbf{Description}: Enhancing representation learning through consistency from multimodal data, applied to downstream ML tasks.}
+        \resumeItem{\textbf{Achievements}: Three papers completed (Conference - 2, 4, 5)}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SERVICES-----------
+\section{Services}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Conference Reviewer}} {}
+
+          \resumeItemListStart
+            \resumeItem{ARR 2024, KDD 2024, ICLR 2025, CVPR 2025, ICLR 2026}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Journal Reviewer}} {}
+
+          \resumeItemListStart
+            \resumeItem{Neural Networks}
+          \resumeItemListEnd
+             \resumeSubHeadingListEnd
+
+%-----------HONORS-----------
+\section{Honors \& Awards}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{UESTC Undergraduate Academic Scholarship}}{2022, 2023, 2024}
+      \resumeProjectHeading
+          {\textbf{HUAWEI Scholarship}}{2023}
+      \resumeProjectHeading
+          {\textbf{The Mathematical Contest in Modeling}:  Honorable Mention (15\%), Student Advisor}{2024}
+           \resumeProjectHeading
+    {\textbf{SenseTime Scholarship}: \normalsize This award is presented to undergraduate students with  outstanding \\  \normalsize contributions
+    in the field of computer science.  Only 25 students received this award in 2024.}{2024}
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, Latex, Git, Matlab, Shell, MarkDown, Html} \\
+     \textbf{Communication}{: Chinese (native), English (TOEFL: 97 - Reading: 24, Listening: 27, Speaking: 21, Writing: 25)}
+    }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}

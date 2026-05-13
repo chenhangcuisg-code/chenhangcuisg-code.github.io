@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chenhang Cui — PhD Student, NUS</title>
+<meta name="description" content="Chenhang Cui — PhD student at the National University of Singapore. Research on trustworthy and aligned vision-language models." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">CC<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="kicker"><span class="dot"></span> First-Year PhD · NExT++ Lab, National University of Singapore</p>
+      <h1>Chenhang <span class="grad">Cui</span></h1>
+      <p class="tagline">
+        Building <b>trustworthy</b>, <b>aligned</b> and <b>safe</b> large vision-language models.
+      </p>
+      <p class="bio">
+        I am a first-year PhD student at the <a href="https://www.nextcenter.org/" target="_blank" rel="noopener">NExT++ Research Centre</a>,
+        <a href="https://www.comp.nus.edu.sg/" target="_blank" rel="noopener">School of Computing, NUS</a>,
+        advised by Prof. <a href="https://www.chuatatseng.com/" target="_blank" rel="noopener">Chua Tat-Seng</a>.
+        Previously I received my B.Eng. (Honors) from <a href="https://en.uestc.edu.cn/" target="_blank" rel="noopener">UESTC</a>,
+        and worked with Prof. <a href="https://www.huaxiuyao.io/" target="_blank" rel="noopener">Huaxiu Yao</a> (UNC) and Prof. <a href="https://engineering.lehigh.edu/faculty/lifang-he" target="_blank" rel="noopener">Lifang He</a> (Lehigh).
+      </p>
+      <p class="bio">
+        My research focuses on <b>hallucination, safety, and RL-based alignment</b> in vision-language models,
+        with previous work on multi-view representation learning.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="CV_cch.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Curriculum Vitae</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=V5X1gdAAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
+        <a class="btn" href="https://github.com/chenhangcuisg-code" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a class="btn" href="mailto:chenhangcui@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="avatar-ring">
+        <div class="avatar">CC</div>
+      </div>
+      <ul class="quick-facts">
+        <li><i class="fa-solid fa-location-dot"></i> Singapore</li>
+        <li><i class="fa-solid fa-building-columns"></i> NUS · NExT++ Lab</li>
+        <li><i class="fa-solid fa-flask"></i> Trustworthy VLMs · RL Alignment</li>
+        <li><i class="fa-solid fa-language"></i> 中文 / English</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <h2><span class="hash">#</span> Research Interests</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <h3>Trustworthy LVLMs</h3>
+      <p>Hallucination, jailbreak, adversarial robustness, and safety evaluation of large vision-language models.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <h3>Alignment &amp; RL</h3>
+      <p>Preference modeling, fine-grained verifiers, RLHF / DPO for multimodal alignment.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+      <h3>Multi-view Representation</h3>
+      <p>Consistency &amp; complementarity in multimodal representation learning for downstream tasks.</p>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="section">
+  <h2><span class="hash">#</span> News</h2>
+  <ul class="news">
+    <li><span class="date">2026.01</span> Started my PhD at the <b>NExT++ Lab</b>, School of Computing, NUS, advised by Prof. Chua Tat-Seng.</li>
+    <li><span class="date">2025.09</span> Paper <i>Safe + Safe = Unsafe?</i> accepted to <b>NeurIPS 2025</b>.</li>
+    <li><span class="date">2025.01</span> Paper on <i>Fine-Grained Verifiers</i> accepted to <b>ICLR 2025</b>.</li>
+    <li><span class="date">2024.10</span> <i>MMIE</i> benchmark accepted to <b>ICLR 2025</b>.</li>
+    <li><span class="date">2024.07</span> <i>Unicorns</i> safety benchmark accepted to <b>ECCV 2024</b>.</li>
+    <li><span class="date">2024.01</span> Hallucination paper accepted to <b>ICLR 2024</b>.</li>
+    <li><span class="date">2024.01</span> Received the <b>SenseTime Scholarship</b> (top 25 nationwide).</li>
+  </ul>
+</section>
+
+<section id="publications" class="section">
+  <h2><span class="hash">#</span> Selected Publications</h2>
+  <p class="muted">* denotes equal contribution. Full list on <a href="https://scholar.google.com/citations?user=V5X1gdAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+  <article class="pub">
+    <div class="venue">NeurIPS<br><span>2025</span></div>
+    <div class="pub-body">
+      <h3>Safe + Safe = Unsafe? Exploring How Safe Images Can Be Exploited to Jailbreak Large Vision-Language Models</h3>
+      <p class="authors"><b>Chenhang Cui</b>, Gelei Deng, An Zhang, Jingnan Zheng, Yicong Li, Lianli Gao, Tianwei Zhang, Tat-Seng Chua</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">ICLR<br><span>2025</span></div>
+    <div class="pub-body">
+      <h3>Fine-Grained Verifiers: Preference Modeling as Next-Token Prediction in Vision-Language Alignment</h3>
+      <p class="authors"><b>Chenhang Cui</b>, An Zhang, Yiyang Zhou, Zhaorun Chen, Gelei Deng, Huaxiu Yao, Tat-Seng Chua</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">ICLR<br><span>2025</span></div>
+    <div class="pub-body">
+      <h3>MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models</h3>
+      <p class="authors">Peng Xia, Siwei Han, Shi Qiu, Yiyang Zhou, Zhaoyang Wang, Wenhao Zheng, Zhaorun Chen, <b>Chenhang Cui</b>, Mingyu Ding, Linjie Li, Lijuan Wang, Huaxiu Yao</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">ECCV<br><span>2024</span></div>
+    <div class="pub-body">
+      <h3>How Many Unicorns Are in This Image? A Safety Evaluation Benchmark for Vision LLMs</h3>
+      <p class="authors">Haoqin Tu*, <b>Chenhang Cui*</b>, Zijun Wang, Yiyang Zhou, Bingchen Zhao, Junlin Han, Wangchunshu Zhou, Huaxiu Yao, Cihang Xie</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">ICLR<br><span>2024</span></div>
+    <div class="pub-body">
+      <h3>Analyzing and Mitigating Object Hallucination in Large Vision-Language Models</h3>
+      <p class="authors">Yiyang Zhou*, <b>Chenhang Cui*</b>, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, Huaxiu Yao</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">NeurIPS<br><span>2023</span></div>
+    <div class="pub-body">
+      <h3>A Novel Approach for Effective Multi-View Clustering with Information-Theoretic Perspective</h3>
+      <p class="authors"><b>Chenhang Cui</b>, Yazhou Ren, Jingyu Pu, Jiawei Li, Xiaorong Pu, Tianyi Wu, Yutao Shi, Lifang He</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">IJCAI<br><span>2023</span></div>
+    <div class="pub-body">
+      <h3>Deep Multi-view Subspace Clustering with Anchor Graph</h3>
+      <p class="authors"><b>Chenhang Cui</b>, Yazhou Ren, Jingyu Pu, Xiaorong Pu, Lifang He</p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="venue">AAAI<br><span>2023</span></div>
+    <div class="pub-body">
+      <h3>Adaptive Feature Imputation with Latent Graph for Deep Incomplete Multi-View Clustering</h3>
+      <p class="authors">Jingyu Pu, <b>Chenhang Cui</b>, Xinyue Chen, Yazhou Ren, Xiaorong Pu, Zhifeng Hao, S. Yu Philip, Lifang He</p>
+    </div>
+  </article>
+</section>
+
+<section id="experience" class="section">
+  <h2><span class="hash">#</span> Research Experience</h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h3>Safety &amp; Multimodal RL Alignment for VLLMs</h3>
+        <p class="muted">NUS · Aug 2024 – Aug 2025 · Advisor: Prof. Chua Tat-Seng, Dr. An Zhang</p>
+        <p>Enhancing safety and alignment of vision-language large models; outputs accepted to ICLR 2025 and NeurIPS 2025.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h3>Reducing Hallucination in Large VLMs</h3>
+        <p class="muted">UNC MURGe-Lab · May 2023 – Jan 2024 · Advisor: Prof. Huaxiu Yao, Prof. Mohit Bansal</p>
+        <p>Reduced object hallucination by 23% on MiniGPT-4 without sacrificing diversity; ICLR 2024 + NeurIPS 2023 Workshop.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h3>Multi-view Representation Learning</h3>
+        <p class="muted">UESTC / Lehigh · May 2022 – Sep 2023 · Advisor: Prof. Yazhou Ren, Prof. Lifang He</p>
+        <p>Consistency &amp; complementarity in multimodal representation; three first-author papers (NeurIPS / IJCAI / AAAI).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2><span class="hash">#</span> Honors &amp; Services</h2>
+  <div class="two-col">
+    <div>
+      <h3>Honors &amp; Awards</h3>
+      <ul class="plain">
+        <li><b>SenseTime Scholarship</b> — top 25 nationwide, 2024</li>
+        <li><b>HUAWEI Scholarship</b>, 2023</li>
+        <li><b>UESTC Academic Scholarship</b>, 2022 / 2023 / 2024</li>
+        <li><b>MCM</b> Honorable Mention (top 15%), Student Advisor, 2024</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Reviewer Service</h3>
+      <ul class="plain">
+        <li>ICLR 2025 / 2026, CVPR 2025</li>
+        <li>KDD 2024, ARR 2024</li>
+        <li>Neural Networks (journal)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="footer">
+  <h2><span class="hash">#</span> Get in touch</h2>
+  <p>Feel free to drop me an email if you'd like to chat about trustworthy multimodal AI, collaborations, or just say hi.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:chenhangcui@gmail.com"><i class="fa-regular fa-envelope"></i> chenhangcui@gmail.com</a>
+    <a class="btn" href="https://scholar.google.com/citations?user=V5X1gdAAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Scholar</a>
+    <a class="btn" href="https://github.com/chenhangcuisg-code" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+  </div>
+  <p class="copyright">© <span id="year"></span> Chenhang Cui · Built with HTML &amp; vibes · Hosted on GitHub Pages</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Theme toggle
+  const root = document.documentElement;
+  const tbtn = document.getElementById('theme-toggle');
+  const saved = localStorage.getItem('theme');
+  if (saved) root.dataset.theme = saved;
+  tbtn.addEventListener('click', () => {
+    const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+    tbtn.innerHTML = next === 'light'
+      ? '<i class="fa-solid fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
+  });
+
+  // Animated background dots
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let w, h, particles;
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+    particles = Array.from({length: 60}, () => ({
+      x: Math.random()*w, y: Math.random()*h,
+      vx: (Math.random()-0.5)*0.3, vy: (Math.random()-0.5)*0.3,
+      r: Math.random()*1.5+0.5
+    }));
+  }
+  window.addEventListener('resize', resize); resize();
+  function draw() {
+    ctx.clearRect(0,0,w,h);
+    const color = getComputedStyle(document.documentElement).getPropertyValue('--dot').trim();
+    particles.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x<0||p.x>w) p.vx*=-1;
+      if (p.y<0||p.y>h) p.vy*=-1;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = color;
+      ctx.fill();
+    });
+    for (let i=0;i<particles.length;i++) {
+      for (let j=i+1;j<particles.length;j++) {
+        const dx = particles[i].x-particles[j].x;
+        const dy = particles[i].y-particles[j].y;
+        const d = Math.hypot(dx,dy);
+        if (d<120) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = color;
+          ctx.globalAlpha = 1 - d/120;
+          ctx.stroke();
+          ctx.globalAlpha = 1;
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+</script>
+</body>
+</html>

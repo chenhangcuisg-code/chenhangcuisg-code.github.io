@@ -166,10 +166,13 @@ h1 {
 .avatar {
   width: 100%; height: 100%; border-radius: 50%;
   background: var(--bg-2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 2.4rem; font-weight: 800;
-  color: var(--text);
+  overflow: hidden;
   animation: spin 8s linear infinite reverse;
+}
+.avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .quick-facts { list-style: none; padding: 0; margin: 0; }
 .quick-facts li {
